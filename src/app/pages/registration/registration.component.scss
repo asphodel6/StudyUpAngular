@@ -1,0 +1,115 @@
+.rectangle img {
+  background-color: white;
+}
+
+.line {
+  position: absolute;
+  top: 101px;
+}
+
+.signUpPage {
+  margin-bottom: 0;
+  margin-top: 53.1px;
+  background-color: #C6E36F;
+  font-family: 'Rubik', sans-serif;
+}
+
+.cat {
+  position: absolute;
+  height: 343.6851234766387px;
+  width: 371.50854908110506px;
+  left: 753px;
+  top: 154px;
+  transform: rotate(-0.94deg);
+}
+
+.title {
+  background-color: #C6E36F;
+  position: absolute;
+  left: 139px;
+  top: 170px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.textarea1 {
+  position: absolute;
+  background-color: #C6E36F;
+  z-index: 1;
+  top: 257px;
+  left: 94px;
+}
+
+.textarea2 {
+  position: absolute;
+  background-color: #C6E36F;
+  z-index: 2;
+  top: 336px;
+  left: 94px;
+}
+
+.textarea3 {
+  position: absolute;
+  background-color: #C6E36F;
+  z-index: 3;
+  top: 415px;
+  left: 94px;
+}
+
+textarea {
+  width: 480px;
+  height: 49px;
+  line-height: 49px;
+  border-radius: 7px;
+  padding-left: 18px;
+  resize: none;
+  font-style: normal;
+  font-size: 14px;
+  border: 2px solid #000000;
+}
+
+.login {
+  position: absolute;
+  display: flex;
+  left: 246px;
+  top: 486px;
+  font-size: 14px;
+  line-height: 16.59px;
+  width: 171px;
+}
+
+.checkbox{
+  position: absolute;
+  left: 169px;
+  top: 513px;
+  white-space: pre;
+  font-size: 14px;
+  line-height: 16.59px;
+}
+
+.signUp {
+  position: absolute;
+  left: 241px;
+  top: 579px;
+}
+
+.signUp button {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 20px;
+}
+
+a {
+  color: #5F5F5F;
+}
+
+.checkbox input[type=checkbox] {
+  position: absolute;
+  left: -35px;
+  top: -3px;
+  width: 20px;
+  height: 20px;
+}

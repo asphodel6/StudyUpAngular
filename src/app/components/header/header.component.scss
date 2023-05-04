@@ -1,0 +1,65 @@
+.header {
+  color: black;
+  background-color: white;
+  height: 65px;
+  display: grid;
+  grid-template-areas:
+        "a b c";
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  margin-left: 94px;
+  margin-top: 30px;
+  grid-area: "a";
+}
+
+.logo img {
+  width: 145px;
+  height: 35px;
+}
+
+.loginButton {
+  grid-area: "b";
+  margin-top: 30px;
+  margin-left: 714px;
+  margin-right: 23px;
+}
+
+.registerButton {
+  grid-area: "c";
+  margin-top: 30px;
+  margin-right: 95px;
+}
+
+.loginButton button {
+  width: 75px;
+  height: 35px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  background-color: white;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 9px 21px;
+}
+
+.registerButton button {
+  width: 134px;
+  height: 35px;
+  background: #000000;
+  border-radius: 7px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 9px 23px;
+}
+
+.login {
+  background-color: #C6E36F;
+}

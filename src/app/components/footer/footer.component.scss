@@ -1,0 +1,53 @@
+.footer {
+  height: 120px;
+  background-color: black;
+  display: grid;
+  grid-template-areas:
+    "a c";
+}
+
+.privacyPolicy {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  grid-area: "a";
+  margin-left: 94px;
+  margin-top: 37px;
+}
+
+.termsOfUSe {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  grid-area: "b";
+  margin-left: 94px;
+  margin-bottom: 30px;
+}
+
+.aboutUs {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  grid-area: "c";
+  margin-right: 821px;
+  margin-top: 37px;
+}
+
+.technicalSupport {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  grid-area: "d";
+}

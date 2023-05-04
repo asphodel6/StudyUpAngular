@@ -1,0 +1,88 @@
+.rectangle img {
+  background-color: white;
+}
+
+.line {
+  position: absolute;
+  top: 101px;
+}
+
+.loginPage {
+  margin-bottom: 0;
+  margin-top: 53.1px;
+  background-color: #87B5FA;
+  font-family: 'Rubik', sans-serif;
+}
+
+.cat {
+  position: absolute;
+  height: 343.6851234766387px;
+  width: 371.50854908110506px;
+  left: 753px;
+  top: 154px;
+  transform: rotate(-0.94deg);
+}
+
+.title {
+  background-color: #87B5FA;
+  position: absolute;
+  left: 139px;
+  top: 232px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.input1 {
+  position: absolute;
+  background-color: #87B5FA;
+  z-index: 1;
+  top: 319px;
+  left: 94px;
+}
+
+.input2 {
+  position: absolute;
+  background-color: #87B5FA;
+  z-index: 2;
+  top: 398.35px;
+  left: 94px;
+}
+
+input {
+  width: 480px;
+  height: 49px;
+  line-height: 49px;
+  border-radius: 7px;
+  padding-left: 18px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+a {
+  color: #5F5F5F;
+}
+
+.forgotPassword {
+  position: absolute;
+  left: 464px;
+  top: 473px;
+}
+
+.login {
+  position: absolute;
+  left: 94px;
+  top: 506.35px;
+}
+
+.login button {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 8.65px 20px;
+}
+
+.error {
+  color: red;
+}
