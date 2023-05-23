@@ -1,0 +1,41 @@
+.main-container{
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.text-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.text {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    position: absolute;
+    
+}
+
+.vector {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Путь к картинке */
+  background-repeat: no-repeat; /* Фон не повторяется */
+  background-size: cover; /* Растягиваем  фон по высоте и ширине */
+  background-position: center; /* Позиция фона по центру */
+  margin-top: 70px;
+}
+
+.btn__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 65px;   
+    box-sizing: border-box;
+    }

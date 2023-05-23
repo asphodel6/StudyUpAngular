@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    box-sizing: border-box; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 30px;
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+.notifications {
+    margin-top: 5px;
+}
