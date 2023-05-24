@@ -10,7 +10,7 @@
 .main{
   grid-template-columns: 670px 500px;
   grid-template-rows: 155px 115px;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-auto-rows: minmax(0, auto);
   grid-auto-columns: minmax(0,auto);
   display: grid;
@@ -84,7 +84,6 @@ a {
   display: flex;
   margin-left: 110px;
   margin-bottom: auto;
-  margin-top: 10px;
 }
 
 .btn {
