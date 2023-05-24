@@ -1,65 +1,95 @@
-.mainContainer {
+.main-container{
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 1400px;
+  justify-content: flex-start;
+  margin-top: 5%;
+  margin-bottom: 16% ;
+}
+
+.main{
+  grid-template-columns: 670px 500px;
+  grid-template-rows: 155px 115px;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(0, auto);
+  grid-auto-columns: minmax(0,auto);
   display: grid;
-  margin-bottom: 135px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.mainVector img {
-  width: 619.75px;
-  height: 129.53px;
-  margin-left: 94px;
-  margin-top: 94px;
+.vectorBlock {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
-.mainVectorText {
+.mainTxt {
+  grid-column: 1/2;
+}
+
+.proceedBtn {
+  grid-column: 1/1;
+  justify-content: start;
+}
+
+.mainImg {
+  grid-column: 2/2;
+  grid-row: 1/2;
+}
+
+.vectorBlock{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainVector{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Путь к картинке */
+  background-repeat: no-repeat; /* Фон не повторяется */
+  background-size: cover; /* Растягиваем  фон по высоте и ширине */
+  background-position: center;
+}
+
+.VectorTxt {
   position: absolute;
-  width: 598px;
-  height: 114px;
-  left: 112px;
-  top: 161px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.txt {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
-.mainDescription {
-  width: 611px;
-  height: 94px;
-  margin-left: 94px;
-  margin-top: 18.47px;
+a {
+  color:white;
+  font-weight: 500;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
 }
 
-.proceedButton {
-  width: 134px;
-  height: 35px;
-  margin-left: 94px;
-  margin-top: 29px;
+.proceedBtn{
+  display: flex;
+  margin-left: 110px;
+  margin-bottom: auto;
 }
 
-.mainPicture {
-  position: absolute;
-  width: 444px;
-  height: 309.5px;
-  left: 741px;
-  top: 159px;
-}
-
-.proceedButton button {
-  background-color: black;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  width: 134px;
-  height: 35px;
+.btn {
+  display: flex;
+  margin-bottom: auto;
+  background-color: #000000;
   border-radius: 7px;
-  padding: 9px 27px;
+  padding: 10px 25px;
 }
