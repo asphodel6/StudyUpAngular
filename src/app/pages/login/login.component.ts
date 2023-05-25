@@ -13,8 +13,7 @@ export class LoginComponent implements OnInit{
   public loginForm!: FormGroup;
 
 
-  constructor(
-    private _authService: AuthService) {
+  constructor(private _authService: AuthService) {
 
   }
 
@@ -25,7 +24,7 @@ export class LoginComponent implements OnInit{
     });
   }
   public submitLogin(): void {
-    this._authService.login();
+    this._authService.login(this.loginForm.value);
   }
 
   public get email(): any {
