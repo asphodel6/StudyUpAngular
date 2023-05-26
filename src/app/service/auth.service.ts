@@ -17,7 +17,9 @@ export class AuthService {
       take(1)
     ).subscribe(res => sessionStorage.setItem('token', res.toString()));
     this._router.navigate(['user']);
-    alert('You have successfully logged in');
+    if (this.isLoggedIn()) {
+      alert('You have successfully logged in');
+    }
   }
 
   public registration(user: IRegistration): void {
