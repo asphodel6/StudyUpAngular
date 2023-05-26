@@ -1,65 +1,41 @@
-.header {
-  color: black;
-  background-color: white;
-  height: 65px;
-  display: grid;
-  grid-template-areas:
-        "a b c";
-  grid-template-columns: 1fr 1fr;
+.header{
+  padding: 30px 30px;
+  box-sizing: border-box; 
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.logo {
-  margin-left: 94px;
-  margin-top: 30px;
-  grid-area: "a";
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo img {
-  width: 145px;
-  height: 35px;
+.btn__block {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
-.loginButton {
-  grid-area: "b";
-  margin-top: 30px;
-  margin-left: 714px;
-  margin-right: 23px;
+a {
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.registerButton {
-  grid-area: "c";
-  margin-top: 30px;
-  margin-right: 95px;
-}
-
-.loginButton button {
-  width: 75px;
-  height: 35px;
+.loginBtn {
+  color: #000000;
+  margin-right: 25px;
   border: 1px solid #000000;
   border-radius: 7px;
-  background-color: white;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 9px 21px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  padding: 10px 25px;
 }
 
-.registerButton button {
-  width: 134px;
-  height: 35px;
-  background: #000000;
-  border-radius: 7px;
+.registrBtn {
   color: white;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 9px 23px;
+  background-color: #000000;
+  border-radius: 7px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  padding: 10px 25px;
 }
 
-.login {
-  background-color: #C6E36F;
-}
