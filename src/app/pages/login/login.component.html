@@ -1,5 +1,43 @@
 <app-header></app-header>
-<div class="loginPage">
+<div class="login__container">
+  <div class="login__block">
+      <h1 class="title">Вход в аккаунт</h1>
+      <div class="input__block">
+        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+          <div class="email__input">
+              <input
+              type="text"
+              name="email"
+              placeholder="E-mail"
+              formControlName="email">
+            <div *ngIf="email.invalid && email.touched" class="error">
+              <p *ngIf="email.errors.required">E-mail обязателен</p>
+              <p *ngIf="email.errors?.['email']">Некорректный e-mail</p>
+            </div>
+          </div>
+          <div class="password__input">
+            <input
+              name="password"
+              placeholder="Пароль"
+              type="password"
+              formControlName="password">
+            <div *ngIf="password.invalid && password.touched" class="error">
+              <p *ngIf="password.errors.required">Пароль обязателен</p>
+              <p *ngIf="password.errors.pattern">Пароль должен быть длиннее 7 символов и содержать цифры</p>
+            </div>
+          </div>
+          <div class="forgotPassword"><a routerLink="/">Забыли пароль?</a></div>
+          <div class="login">
+            <button [disabled]="loginForm.invalid">Войти</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="loginPage">
   <div class="title">Вход в аккаунт</div>
   <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
     <div class="input1">
@@ -32,4 +70,4 @@
       <button [disabled]="loginForm.invalid">Войти</button>
     </div>
   </form>
-</div>
+</div> -->

@@ -1,88 +1,73 @@
-.rectangle img {
-  background-color: white;
+.login__container{
+  padding: 10px  10px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../assets/images/login-bg.svg) center center no-repeat;
+  background-size: 100%;
 }
 
-.line {
-  position: absolute;
-  top: 101px;
-}
-
-.loginPage {
-  margin-bottom: 0;
-  margin-top: 53.1px;
-  background-color: #87B5FA;
+.login__block {
+  margin-top: 10%;
+  margin-right: 40%;
+  margin-bottom: 13.25%;
   font-family: 'Rubik', sans-serif;
-}
 
-.cat {
-  position: absolute;
-  height: 343.6851234766387px;
-  width: 371.50854908110506px;
-  left: 753px;
-  top: 154px;
-  transform: rotate(-0.94deg);
 }
 
 .title {
-  background-color: #87B5FA;
-  position: absolute;
-  left: 139px;
-  top: 232px;
+  margin-left: 17%;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
-.input1 {
-  position: absolute;
-  background-color: #87B5FA;
-  z-index: 1;
-  top: 319px;
-  left: 94px;
-}
-
-.input2 {
-  position: absolute;
-  background-color: #87B5FA;
-  z-index: 2;
-  top: 398.35px;
-  left: 94px;
-}
-
-input {
-  width: 480px;
-  height: 49px;
-  line-height: 49px;
+.input__block input{
+  background: #FFFFFF;
+  border: 2px solid #000000;
   border-radius: 7px;
-  padding-left: 18px;
-  font-style: normal;
-  font-size: 14px;
+  padding: 16px 300px 16px 18px;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 20px;
 }
 
-a {
-  color: #5F5F5F;
+.forgotPassword a {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color:#5F5F5F;
+  text-decoration-line: underline;
+  margin-left: 350px;
 }
-
-.forgotPassword {
-  position: absolute;
-  left: 464px;
-  top: 473px;
-}
-
-.login {
-  position: absolute;
-  left: 94px;
-  top: 506.35px;
+.forgotPassword{
+  margin-bottom: 25px;
 }
 
 .login button {
-  background-color: black;
-  color: white;
+  color: #FFFFFF;
+  background: #000000;
   border-radius: 7px;
-  padding: 8.65px 20px;
+  padding: 10px 25px;
+  margin-left: 19px;
 }
 
 .error {
-  color: red;
+  position: relative;
+}
+
+.error p {
+  position: absolute;
+  margin-bottom: 100px;
+  left: 5%;
+  top: 200%;
+}
+
+.email__input {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.password__input {
+  margin-bottom: 20px;
 }
