@@ -5,13 +5,11 @@
       <div class="input__block">
         <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
           <div class="email__input">
-            <p class="email">
               <input
               type="text"
               name="email"
               placeholder="E-mail"
               formControlName="email">
-            </p>
             <div *ngIf="email.invalid && email.touched" class="error">
               <div *ngIf="email.errors.required">E-mail обязателен</div>
               <div *ngIf="email.errors?.['email']">Некорректный e-mail</div>
