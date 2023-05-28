@@ -1,14 +1,54 @@
 <app-header></app-header>
-<div class="signUpPage">
+<div class="reg__containter">
+  <div class="reg__block">
+      <h1 class="title">Создать аккаунт</h1>
+      <div class="input__block">
+        <form [formGroup]="registrationForm" (ngSubmit)="createUser()">
+          <div class="userName__input">
+              <input placeholder="Имя пользователя" formControlName="userName">
+              <div *ngIf="userName.touched" class="error">Имя пользователя обязательно</div>
+          </div>
+          <div class="email__input">
+            <input placeholder="E-mail" type="email" formControlName="email">
+            <div *ngIf="email.invalid && email.touched" class="error">
+              <div *ngIf="email.errors.required">E-mail обязателен</div>
+              <div *ngIf="email.errors?.['email']">Некорректный e-mail</div>
+            </div>
+          </div>
+          <div class="password__input">
+          <input placeholder="Password" type="email" formControlName="email">
+          <div *ngIf="password.invalid && password.touched" class="error">
+            <div *ngIf="password.errors.required">Пароль обязателен</div>
+            <div *ngIf="password.errors.pattern">Пароль должен быть длиннее 7 символов и содержать цифры</div>
+          </div>
+          </div>
+          <div class="links">
+          <div class="login">Уже есть аккаунт? <a routerLink="/login">Войти</a></div>
+          <div class="checkbox"><input type="checkbox"/>
+            Я принимаю <a href="src/components/RegistrationPage">условия пользовательского соглашения</a>
+            <br/> и даю <a href="src/components/RegistrationPage">согласие на обработку персональных данных</a></div>
+          <div class="signUp">
+            <button [disabled]="registrationForm.invalid">Зарегистрироваться</button>
+          </div>
+        </div>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+<!--- <div class="signUpPage">
   <div class="title">Создать аккаунт</div>
   <form [formGroup]="registrationForm" (ngSubmit)="createUser()">
     <div class="input1"><input placeholder="Имя пользователя" formControlName="userName"></div>
     <div *ngIf="userName.touched" class="error">Имя пользователя обязательно</div>
+
     <div class="input2"><input placeholder="E-mail" type="email" formControlName="email"></div>
     <div *ngIf="email.invalid && email.touched" class="error">
       <div *ngIf="email.errors.required">E-mail обязателен</div>
       <div *ngIf="email.errors?.['email']">Некорректный e-mail</div>
     </div>
+
     <div class="input3"><input placeholder="Пароль" type="password" formControlName="password"></div>
     <div *ngIf="password.invalid && password.touched" class="error">
       <div *ngIf="password.errors.required">Пароль обязателен</div>
@@ -25,4 +65,4 @@
       <button [disabled]="registrationForm.invalid">Зарегистрироваться</button>
     </div>
   </form>
-</div>
+</div> -->
