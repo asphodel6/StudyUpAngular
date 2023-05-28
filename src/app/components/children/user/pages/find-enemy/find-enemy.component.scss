@@ -25,6 +25,7 @@
     background-repeat: no-repeat; /* Фон не повторяется */
     background-size: cover; /* Растягиваем  фон по высоте и ширине */
     background-position: center;
+    margin-bottom: 20px;
 }
 
 .title{
@@ -32,6 +33,18 @@
     font-size: 3rem;
     line-height: 3.5rem;
   }
+
+.back {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #000000;
+    margin-left: 132px; 
+    margin-bottom: 10px;
+}
+
+.chooseEnemyBlock{
+    margin-left: 70px ;
+}
 
 h2{
     font-size: 2.25rem;

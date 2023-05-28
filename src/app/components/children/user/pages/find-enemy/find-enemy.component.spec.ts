@@ -10,7 +10,7 @@ describe('FindEnemyComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ FindEnemyComponent ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FindEnemyComponent);
     component = fixture.componentInstance;
