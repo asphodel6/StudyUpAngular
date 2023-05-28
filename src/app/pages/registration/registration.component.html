@@ -1,28 +1,30 @@
 <app-header></app-header>
-<div class="reg__containter">
+<div class="reg__container">
   <div class="reg__block">
-      <h1 class="title">Создать аккаунт</h1>
-      <div class="input__block">
-        <form [formGroup]="registrationForm" (ngSubmit)="createUser()">
-          <div class="userName__input">
-              <input placeholder="Имя пользователя" formControlName="userName">
-              <div *ngIf="userName.touched" class="error">Имя пользователя обязательно</div>
+    <h1 class="title">Создать аккаунт</h1>
+    <div class="input__block">
+      <form [formGroup]="registrationForm" (ngSubmit)="createUser()">
+        <div class="userName__input">
+          <input placeholder="Имя пользователя" formControlName="userName">
+          <div *ngIf="userName.touched" class="error">
+            <p>Имя пользователя обязательно</p>
           </div>
-          <div class="email__input">
-            <input placeholder="E-mail" type="email" formControlName="email">
-            <div *ngIf="email.invalid && email.touched" class="error">
-              <div *ngIf="email.errors.required">E-mail обязателен</div>
-              <div *ngIf="email.errors?.['email']">Некорректный e-mail</div>
-            </div>
+        </div>
+        <div class="email__input">
+          <input placeholder="E-mail" type="email" formControlName="email">
+          <div *ngIf="email.invalid && email.touched" class="error">
+            <p *ngIf="email.errors.required">E-mail обязателен</p>
+            <p *ngIf="email.errors?.['email']">Некорректный e-mail</p>
           </div>
-          <div class="password__input">
-          <input placeholder="Password" type="email" formControlName="email">
+        </div>
+        <div class="password__input">
+          <input placeholder="Password" type="password" formControlName="password">
           <div *ngIf="password.invalid && password.touched" class="error">
-            <div *ngIf="password.errors.required">Пароль обязателен</div>
-            <div *ngIf="password.errors.pattern">Пароль должен быть длиннее 7 символов и содержать цифры</div>
+            <p *ngIf="password.errors.required">Пароль обязателен</p>
+            <p *ngIf="password.errors.pattern">Пароль должен быть длиннее 7 символов и содержать цифры</p>
           </div>
-          </div>
-          <div class="links">
+        </div>
+        <div class="links">
           <div class="login">Уже есть аккаунт? <a routerLink="/login">Войти</a></div>
           <div class="checkbox"><input type="checkbox"/>
             Я принимаю <a href="src/components/RegistrationPage">условия пользовательского соглашения</a>
@@ -31,7 +33,7 @@
             <button [disabled]="registrationForm.invalid">Зарегистрироваться</button>
           </div>
         </div>
-        </form>
-      </div>
+      </form>
+    </div>
   </div>
-</div> 
+</div>

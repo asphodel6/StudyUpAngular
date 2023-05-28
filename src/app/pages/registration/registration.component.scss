@@ -1,4 +1,4 @@
-.reg__containter{
+.reg__container{
   padding: 10px  10px;
   max-width: 100%;
   display: flex;
@@ -51,7 +51,7 @@ a {
   margin-bottom: 10px;
 }
 
-.links input{ 
+.links input{
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -69,4 +69,12 @@ a {
   padding: 10px 20px ;
   color: #FFFFFF;
   margin-left: 30%
+}
+
+.error {
+  position: relative;
+}
+
+.error p {
+  position: absolute;
 }
