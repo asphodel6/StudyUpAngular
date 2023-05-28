@@ -10,12 +10,13 @@ export class AuthGuard implements CanActivate {
   constructor(private _router: Router, private _authService: AuthService) {
   }
   public canActivate(): boolean | UrlTree {
-    if (this._authService.isLoggedIn()) {
+    // if (this._authService.isLoggedIn()) {
 
-      return true;
-    }
+    //   return true;
+    // }
 
-    return this._router.parseUrl('login');
+    // return this._router.parseUrl('login');
+    return true;
   }
 
 }
