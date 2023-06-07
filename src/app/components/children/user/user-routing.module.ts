@@ -6,7 +6,7 @@ import { FindEnemyComponent } from './pages/find-enemy/find-enemy.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'battle', component: FindEnemyComponent },
+  { path: 'search', component: FindEnemyComponent },
 ];
 
 @NgModule({
