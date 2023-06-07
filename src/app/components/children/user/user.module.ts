@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FindEnemyComponent } from './pages/find-enemy/find-enemy.component';
 import { BattlefieldComponent } from './pages/battlefield/battlefield.component';
 
-
 @NgModule({
   declarations: [
     MainComponent,
