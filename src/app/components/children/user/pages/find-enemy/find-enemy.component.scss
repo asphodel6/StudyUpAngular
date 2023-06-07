@@ -1,0 +1,95 @@
+.find__enemy__container{
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1400px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.findEnemy {
+    grid-template-rows: 150px;
+    grid-gap: 50px;
+    grid-auto-rows: minmax(0, auto);
+    grid-auto-columns: minmax(0,auto);
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 8.9%;
+}
+
+.battleVector {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Путь к картинке */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.title{
+    position: absolute;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+.back {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #000000;
+    margin-left: 132px; 
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.chooseEnemyBlock{
+    margin-left: 70px ;
+}
+
+h2{
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+}
+
+.cat{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.trainingBlock{
+    display: flex;
+    margin-left: 55px;
+}
+
+.playBtn {
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    background: #000000;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 10px;
+}
+
+.randomPlayerBlock {
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    margin-bottom: 30px;
+}
+
+.lock {
+    margin-left: 120px;
+}
+
+.playWithFriendBlock {
+    display: flex;
+    margin-left: 55px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.paws{
+    margin-right: 20px;
+}
