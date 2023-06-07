@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ILogin } from '../interfaces/login.user.interface';
 import { IRegistration } from '../interfaces/registration.user.interface';
-import { take } from 'rxjs';
+import { catchError, take, throwError } from 'rxjs';
 import { Router } from '@angular/router';
 const url: string = 'http://localhost:8080';
 const userToken: string = 'true';
@@ -14,11 +14,17 @@ export class AuthService {
 
   public login(user: ILogin): void {
     this._http.post(`${url}/api/auth/login`, user).pipe(
-      take(1)
+      take(1),
+      catchError(err => {
+        return throwError(err);
+      })
     ).subscribe(res => sessionStorage.setItem('token', res.toString()));
     this._router.navigate(['user']);
     if (this.isLoggedIn()) {
-      alert('You have successfully logged in');
+      alert('Вы успешно вошли');
+    }
+    else {
+      alert('Неверный логин илм пароль');
     }
   }
 
