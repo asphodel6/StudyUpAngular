@@ -1,4 +1,4 @@
-<div (click)="showQuestion()" class="game-board"><img src="../../../../../../assets/images/question-grey.svg"></div>
+<div (click)="showQuestion()" class="game-board"><img src="{{ url }}"></div>
 
 <div *ngIf="showQuestionModal" class="question-modal">
   <h2>{{ currentQuestion.question }}</h2>

@@ -1,13 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { IQuestion } from '../../interfaces/question.interface';
+import { GameService } from '../../service/game.service';
 
 @Component({
   selector: 'user-game',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [GameService]
 })
 export class GameComponent {
+  public url: string = '../../../../../../assets/images/question-grey.svg';
   public showQuestionModal: boolean = false;
   public currentQuestion!: IQuestion;
   public selectedOption!: string | null;
@@ -18,6 +21,10 @@ export class GameComponent {
     { question: 'Вопрос 3', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 3' },
     { question: 'Вопрос 4', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 4' }
   ];
+
+  constructor(private _gameService: GameService) {
+
+  }
 
   public showQuestion(): void {
     this.currentQuestion = this.getRandomQuestion();
@@ -33,11 +40,13 @@ export class GameComponent {
 
   public checkAnswer(): void {
     if (this.selectedOption === this.currentQuestion.correctAnswer) {
-      alert('Правильный ответ!');
-    } else {
-      alert('Неправильный ответ!');
+      this._gameService.rightAnswer();
+      this.url = '../../../../../../assets/images/question-blue.svg';
     }
-
+    else {
+      this._gameService.wrongAnswer();
+    }
     this.showQuestionModal = false;
+    this._gameService.checkGame();
   }
 }
