@@ -6,17 +6,21 @@ import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FindEnemyComponent } from './pages/find-enemy/find-enemy.component';
 import { BattlefieldComponent } from './pages/battlefield/battlefield.component';
+import { FormsModule } from '@angular/forms';
+import { GameComponent } from './components/game/game.component';
 
 @NgModule({
   declarations: [
     MainComponent,
     HeaderComponent,
     FindEnemyComponent,
-    BattlefieldComponent
+    BattlefieldComponent,
+    GameComponent
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    FormsModule
   ]
 })
 export class UserModule { }
