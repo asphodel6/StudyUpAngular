@@ -1,7 +1,7 @@
 .play-field-container{
     padding: 10px  10px;
     background: url(../../../../../../assets/images/play-field-bg.svg) center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
@@ -11,8 +11,9 @@
 
 .play-field{
     max-width: 1600px;
-    margin-left: 8%;
-     margin-bottom: 12.5%;
+    margin-left: 7.597%;
+    margin-bottom: 9.5%;
+    margin-top: 3%;
 }
 
 .players-area{
