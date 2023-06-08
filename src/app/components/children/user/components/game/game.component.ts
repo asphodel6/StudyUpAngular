@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { IQuestion } from '../../interfaces/question.interface';
 import { GameService } from '../../service/game.service';
+import { questions } from '../../../../../../assets/questions/questions';
 
 @Component({
   selector: 'user-game',
@@ -15,12 +16,7 @@ export class GameComponent {
   public currentQuestion!: IQuestion;
   public selectedOption!: string | null;
 
-  public questions: IQuestion[] = [
-    { question: 'Вопрос 1', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 1' },
-    { question: 'Вопрос 2', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 2' },
-    { question: 'Вопрос 3', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 3' },
-    { question: 'Вопрос 4', options: ['Ответ 1', 'Ответ 2', 'Ответ 3', 'Ответ 4'], correctAnswer: 'Ответ 4' }
-  ];
+  public questions: IQuestion[] = questions;
 
   constructor(private _gameService: GameService) {
 
