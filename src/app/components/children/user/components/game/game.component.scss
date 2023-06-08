@@ -1,7 +1,6 @@
 .game-board {
-  width: 200px;
+  width: 150px;
   height: 200px;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +8,12 @@
 }
 
 .question-modal {
-  width: 400px;
+  width: 1000px;
   padding: 20px;
   background-color: white;
   border: 1px solid black;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
