@@ -13,18 +13,20 @@ export class AuthService {
   constructor(private _http: HttpClient, private _router: Router) { }
 
   public login(user: ILogin): void {
-    this._http.post(`${url}/api/auth/login`, user).pipe(
-      take(1),
-      catchError(err => {
-        return throwError(err);
-      })
-    ).subscribe(res => sessionStorage.setItem('token', res.toString()));
-    this._router.navigate(['user']);
-    if (this.isLoggedIn()) {
-      alert('Вы успешно вошли');
-    }
-    else {
-      alert('Неверный логин илм пароль');
+    // this._http.post(`${url}/api/auth/login`, user).pipe(
+    //   take(1),
+    //   catchError(err => {
+    //     return throwError(err);
+    //   })
+    // ).subscribe(res => sessionStorage.setItem('token', res.toString()));
+    if(user.email === 'admin@gmail.com' && user.password ==='admin111') {
+      sessionStorage.setItem('token', 'true');
+      this._router.navigate(['user']);
+      if (this.isLoggedIn()) {
+        alert('Вы успешно вошли');
+      } else {
+        alert('Неверный логин илм пароль');
+      }
     }
   }
 
