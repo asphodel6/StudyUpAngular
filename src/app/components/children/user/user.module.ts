@@ -8,6 +8,7 @@ import { FindEnemyComponent } from './pages/find-enemy/find-enemy.component';
 import { BattlefieldComponent } from './pages/battlefield/battlefield.component';
 import { FormsModule } from '@angular/forms';
 import { GameComponent } from './components/game/game.component';
+import { DisabledDirective } from './directives/disabled.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { GameComponent } from './components/game/game.component';
     HeaderComponent,
     FindEnemyComponent,
     BattlefieldComponent,
-    GameComponent
+    GameComponent,
+    DisabledDirective
   ],
   imports: [
     CommonModule,
