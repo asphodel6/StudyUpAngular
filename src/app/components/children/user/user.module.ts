@@ -9,7 +9,6 @@ import { BattlefieldComponent } from './pages/battlefield/battlefield.component'
 import { FormsModule } from '@angular/forms';
 import { GameComponent } from './components/game/game.component';
 
-
 @NgModule({
   declarations: [
     MainComponent,

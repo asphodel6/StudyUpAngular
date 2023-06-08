@@ -1,0 +1,41 @@
+.play-field-container{
+    padding: 10px  10px;
+    background: url(../../../../../../assets/images/play-field-bg.svg) center center no-repeat;
+    background-size: 100%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}          
+
+.play-field{
+    max-width: 1600px;
+    margin-left: 8%;
+     margin-bottom: 12.5%;
+}
+
+.players-area{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+p{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+
+.health-bar img{
+    padding: 5px;
+}
+
+.play-zone {
+    display: flex;
+    justify-content: center;
+}
+
+.play-zone img{
+    padding: 20px;
+}
