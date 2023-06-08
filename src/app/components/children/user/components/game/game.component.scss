@@ -1,0 +1,37 @@
+.game-board {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question-modal {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question-modal h2 {
+  margin-top: 0;
+}
+
+.question-modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question-modal li {
+  margin-bottom: 10px;
+}
+
+.question-modal button {
+  margin-top: 10px;
+}
