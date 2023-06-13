@@ -9,6 +9,8 @@ import { BattlefieldComponent } from './pages/battlefield/battlefield.component'
 import { FormsModule } from '@angular/forms';
 import { GameComponent } from './components/game/game.component';
 import { DisabledDirective } from './directives/disabled.directive';
+import { VictoryComponent } from './pages/victory/victory.component';
+import { DefeatComponent } from './pages/defeat/defeat.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DisabledDirective } from './directives/disabled.directive';
     FindEnemyComponent,
     BattlefieldComponent,
     GameComponent,
-    DisabledDirective
+    DisabledDirective,
+    VictoryComponent,
+    DefeatComponent
   ],
   imports: [
     CommonModule,
