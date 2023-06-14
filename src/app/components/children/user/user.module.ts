@@ -21,7 +21,7 @@ import { DefeatComponent } from './pages/defeat/defeat.component';
     GameComponent,
     DisabledDirective,
     VictoryComponent,
-    DefeatComponent
+    DefeatComponent,
   ],
   imports: [
     CommonModule,
