@@ -1,0 +1,106 @@
+.defeat-container {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rubik';
+    font-style: normal;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+.defeat-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Путь к картинке */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    background-position: center;
+}
+
+.players-info{
+    position: absolute;
+    margin-left: 2.5%;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.icon-winner {
+    margin-left: 35px;
+}
+
+.icon-loser {
+    margin-left: 25px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.first{
+    margin-left: 5px;
+}
+
+.player-name{
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 150px
+}
+
+.crown {
+    margin-right: 15px;
+}
+
+.score {
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.defeat-text {
+    margin-left: 110px;
+    margin-bottom: 140px;
+}
+
+.btn-block {
+    margin-left: 300px;
+}
+
+.btn {
+    margin-right: 20px ;
+    background: #000000;
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+// .victory-text {
+//     margin-top: 20%
+// }

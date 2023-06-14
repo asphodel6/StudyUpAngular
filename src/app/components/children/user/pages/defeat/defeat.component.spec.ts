@@ -10,7 +10,7 @@ describe('DefeatComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ DefeatComponent ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DefeatComponent);
     component = fixture.componentInstance;
