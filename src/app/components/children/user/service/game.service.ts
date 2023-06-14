@@ -28,13 +28,15 @@ export class GameService {
 
   public checkGame(): void {
     if (hearts === 0) {
-      alert('Вы проиграли !');
-      this._router.navigate(['user/search']);
+      hearts = 3;
+      rightAnswers = 0;
+      this._router.navigate(['user/defeat']);
     }
 
     else if (rightAnswers === 3) {
-      alert('Вы победили !');
-      this._router.navigate(['user/search']);
+      hearts = 3;
+      rightAnswers = 0;
+      this._router.navigate(['user/victory']);
     }
   }
 
