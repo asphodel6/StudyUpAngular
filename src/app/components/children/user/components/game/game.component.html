@@ -1,14 +1,15 @@
 <div (click)="showQuestion()" class="game-board"><img src="{{ url }}"></div>
 
 <div *ngIf="showQuestionModal" class="question-modal">
-  <h2>{{ currentQuestion.question }}</h2>
-  <ul>
-    <li *ngFor="let option of currentQuestion.options">
-      <label>
-        <input type="radio" [value]="option" [(ngModel)]="selectedOption">
-        {{ option }}
-      </label>
-    </li>
-  </ul>
-  <button (click)="checkAnswer()">Ответить</button>
+    <div class="question-block">
+    <img class="question-area" src="../../../../../../assets/images/answer-area.svg" alt="area">
+    <h3 class="question-text">{{ currentQuestion.question }}</h3>
+    </div>
+      <ul>
+        <li *ngFor="let option of currentQuestion.options">
+          <input type="radio" class="radio" id="radio" [value]="option" [(ngModel)]="selectedOption">
+          <label> {{ option }} </label>
+        </li>
+      </ul>
+      <button (click)="checkAnswer()">Ответить</button>
 </div>
