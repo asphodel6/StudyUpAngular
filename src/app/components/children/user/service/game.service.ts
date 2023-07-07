@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { ReplaySubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 let rightAnswers: number = 0;
 let hearts: number = 3;
 
-export const heartsCount$: ReplaySubject<number> = new ReplaySubject(1);
-export const rightAnswersCount$: ReplaySubject<number> = new ReplaySubject(1);
+export const heartsCount$: BehaviorSubject<number> = new BehaviorSubject(3);
+export const rightAnswersCount$: BehaviorSubject<number> = new BehaviorSubject(0);
 
 @Injectable()
 export class GameService {
   constructor(private _router: Router) {
-    heartsCount$.next(3);
-    rightAnswersCount$.next(0);
+
   }
 
   public rightAnswer(): void{
