@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { heartsCount$ } from '../../service/game.service';
 import { rightAnswersCount$ } from '../../service/game.service';
-import { ReplaySubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'user-battlefield',
@@ -10,6 +10,6 @@ import { ReplaySubject } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BattlefieldComponent {
-  public hearts$: ReplaySubject<number> = heartsCount$;
-  public answers$: ReplaySubject<number> = rightAnswersCount$;
+  public hearts$: BehaviorSubject<number> = heartsCount$;
+  public answers$: BehaviorSubject<number> = rightAnswersCount$;
 }
