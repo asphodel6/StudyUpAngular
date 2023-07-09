@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { IQuestion } from '../../interfaces/question.interface';
 import { GameService } from '../../service/game.service';
 import { questions } from '../../../../../../assets/questions/questions';
+type ShowModal = 'none' | 'false' | 'true';
 
 @Component({
   selector: 'user-game',
@@ -15,6 +16,7 @@ export class GameComponent {
   public showQuestionModal: boolean = false;
   public currentQuestion!: IQuestion;
   public selectedOption!: string | null;
+  public modal: ShowModal = 'none';
 
   public questions: IQuestion[] = questions;
 
@@ -36,13 +38,19 @@ export class GameComponent {
 
   public checkAnswer(): void {
     if (this.selectedOption === this.currentQuestion.correctAnswer) {
+      this.modal = 'true';
       this._gameService.rightAnswer();
       this.url = '../../../../../../assets/images/question-blue.svg';
     }
     else {
+      this.modal = 'false';
       this._gameService.wrongAnswer();
     }
     this.showQuestionModal = false;
     this._gameService.checkGame();
+  }
+
+  public closeModal(): void {
+    this.modal = 'none';
   }
 }
