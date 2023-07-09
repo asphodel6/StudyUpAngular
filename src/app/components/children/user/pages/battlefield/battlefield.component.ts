@@ -9,13 +9,13 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./battlefield.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BattlefieldComponent implements OnDestroy{
+export class BattlefieldComponent{
   public hearts$: BehaviorSubject<number> = heartsCount$;
   public answers$: BehaviorSubject<number> = rightAnswersCount$;
 
-  public ngOnDestroy(): void {
-    this.hearts$.next(3);
-    this.answers$.next(0);
-    console.log('server ymer');
-  }
+  // public ngOnDestroy(): void {
+  //   // this.hearts$.next(3);
+  //   // this.answers$.next(0);
+  //   // console.log('server ymer');
+  // }
 }

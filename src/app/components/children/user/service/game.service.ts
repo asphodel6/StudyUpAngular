@@ -31,18 +31,22 @@ export class GameService implements OnDestroy, OnInit{
     if (hearts === 0) {
       hearts = 3;
       rightAnswers = 0;
+      rightAnswersCount$.next(rightAnswers);
+      heartsCount$.next(hearts);
       this._router.navigate(['user/defeat']);
     }
 
     else if (rightAnswers === 3) {
       hearts = 3;
       rightAnswers = 0;
+      rightAnswersCount$.next(rightAnswers);
+      heartsCount$.next(hearts);
       this._router.navigate(['user/victory']);
     }
   }
 
   public ngOnDestroy(): void {
-    heartsCount$.complete();
-    rightAnswersCount$.complete();
+    // heartsCount$.complete();
+    // rightAnswersCount$.complete();
   }
 }
