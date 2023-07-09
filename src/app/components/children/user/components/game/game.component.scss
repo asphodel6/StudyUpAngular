@@ -111,6 +111,16 @@
   justify-content: flex-start;
 }
 
+.border-red {
+  border: 3px solid #FBA094;
+  padding: 40px;
+  height: calc(100% - 80px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .header {
   display: flex;
   justify-content: flex-end;

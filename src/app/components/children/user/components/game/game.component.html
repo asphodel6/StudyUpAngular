@@ -17,7 +17,7 @@
 <div *ngIf="modal !== 'none'">
   <div class="modal">
     <div class="outer-border">
-      <div class="inner-border">
+      <div [ngClass]="{'inner-border': modal === 'true', 'border-red': modal === 'false'}">
         <div class="header">
           <span class="close-btn" (click)="closeModal()">&times;</span>
         </div>
