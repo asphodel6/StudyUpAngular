@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./battlefield.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BattlefieldComponent {
+export class BattlefieldComponent{
   public hearts$: BehaviorSubject<number> = heartsCount$;
   public answers$: BehaviorSubject<number> = rightAnswersCount$;
 }

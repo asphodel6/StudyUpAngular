@@ -1,15 +1,41 @@
 <div (click)="showQuestion()" class="game-board"><img src="{{ url }}"></div>
 
 <div *ngIf="showQuestionModal" class="question-modal">
-    <div class="question-block">
+  <div class="question-block">
     <img class="question-area" src="../../../../../../assets/images/answer-area.svg" alt="area">
     <h3 class="question-text">{{ currentQuestion.question }}</h3>
-    </div>
-      <ul>
-        <li *ngFor="let option of currentQuestion.options">
-          <input type="radio" class="radio" id="radio" [value]="option" [(ngModel)]="selectedOption">
-          <label> {{ option }} </label>
-        </li>
-      </ul>
-      <button (click)="checkAnswer()">Ответить</button>
+  </div>
+  <ul>
+    <li *ngFor="let option of currentQuestion.options">
+      <input type="radio" class="radio" id="radio" [value]="option" [(ngModel)]="selectedOption">
+      <label> {{ option }} </label>
+    </li>
+  </ul>
+  <button (click)="checkAnswer()">Ответить</button>
 </div>
+
+<div *ngIf="modal !== 'none'">
+  <div class="modal">
+    <div class="outer-border">
+      <div [ngClass]="{'inner-border': modal === 'true', 'border-red': modal === 'false'}">
+        <div class="header">
+          <span class="close-btn" (click)="closeModal()">&times;</span>
+        </div>
+        <div class="content">
+          <ng-container *ngIf="modal === 'false'; then wrongAnswer else correctAnswer"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #correctAnswer>
+  <h3>Верно!</h3>
+  <img src="assets/images/correct-answer.svg" alt="Правильно">
+</ng-template>
+
+<ng-template #wrongAnswer>
+  <h3>Неверно!</h3>
+  <img src="assets/images/wrong-answer.svg" alt="Неправильно">
+</ng-template>
