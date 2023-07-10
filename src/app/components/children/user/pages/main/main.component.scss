@@ -1,41 +1,80 @@
-.main-container{
-    padding: 5px;
-    margin: 0 auto;
-    max-width: 1400px;
+.main-container {
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .text-part {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .text {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    position: absolute;
-    
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  position: absolute;
 }
 
 .vector {
   display: flex;
   justify-content: center;
-  align-items: center; /* Путь к картинке */
-  background-repeat: no-repeat; /* Фон не повторяется */
-  background-size: cover; /* Растягиваем  фон по высоте и ширине */
-  background-position: center; /* Позиция фона по центру */
-  margin-top: 70px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn__block {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;   
-    box-sizing: border-box;
-    margin-bottom: 7.15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 7.15%;
+}
+
+.btn__block a {
+  margin: 10px;
+}
+
+@media (max-width: 1000px){
+  .text-part {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .text {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .vector {
+    margin-bottom: 40px;
+  }
+
+  .btn__block a {
+    margin: 30px;
+  }
+
+  .btn__block img {
+    width: 400px;
+  }
+
+  .main-container {
+    max-width: 2000px;
+  }
 }
