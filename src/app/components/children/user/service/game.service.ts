@@ -6,6 +6,7 @@ let hearts: number = 3;
 
 export const heartsCount$: BehaviorSubject<number> = new BehaviorSubject(3);
 export const rightAnswersCount$: BehaviorSubject<number> = new BehaviorSubject(0);
+export let gameOver: boolean = false;
 
 @Injectable()
 export class GameService implements OnDestroy{
@@ -25,10 +26,12 @@ export class GameService implements OnDestroy{
 
   public checkGame(): void {
     if (hearts === 0) {
+      gameOver = true;
       this._router.navigate(['user/defeat']);
     }
 
     else if (rightAnswers === 3) {
+      gameOver = true;
       this._router.navigate(['user/victory']);
     }
   }
@@ -38,5 +41,6 @@ export class GameService implements OnDestroy{
     hearts = 3;
     rightAnswersCount$.next(0);
     heartsCount$.next(3);
+    gameOver = false;
   }
 }
