@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 let rightAnswers: number = 0;
@@ -8,7 +8,7 @@ export const heartsCount$: BehaviorSubject<number> = new BehaviorSubject(3);
 export const rightAnswersCount$: BehaviorSubject<number> = new BehaviorSubject(0);
 
 @Injectable()
-export class GameService{
+export class GameService implements OnDestroy{
   constructor(private _router: Router) {
 
   }
@@ -25,19 +25,18 @@ export class GameService{
 
   public checkGame(): void {
     if (hearts === 0) {
-      hearts = 3;
-      rightAnswers = 0;
-      rightAnswersCount$.next(rightAnswers);
-      heartsCount$.next(hearts);
       this._router.navigate(['user/defeat']);
     }
 
     else if (rightAnswers === 3) {
-      hearts = 3;
-      rightAnswers = 0;
-      rightAnswersCount$.next(rightAnswers);
-      heartsCount$.next(hearts);
       this._router.navigate(['user/victory']);
     }
+  }
+
+  public ngOnDestroy(): void {
+    rightAnswers = 0;
+    hearts = 3;
+    rightAnswersCount$.next(0);
+    heartsCount$.next(3);
   }
 }
