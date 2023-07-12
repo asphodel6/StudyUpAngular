@@ -78,3 +78,24 @@ a {
 .error p {
   position: absolute;
 }
+
+@media screen and (max-width: 1100px) { 
+  .reg__block {
+    scale: 80%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .title{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .reg__container{
+    background: transparent;
+  }
+  .reg__block{
+    margin-right: 0;
+  }
+}

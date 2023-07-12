@@ -72,16 +72,11 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .title{
-    font-size: 2rem;
-  }
-  input{
-    width: 75px;
-  }
-  .login__block{
-    margin-top: 105px;
+    .login__block{
+    scale: 80%;
   }
 }
+
 @media screen and (max-width: 800px) {
   .title{
     margin-bottom: 100px;

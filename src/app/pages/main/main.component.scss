@@ -1,38 +1,18 @@
 .main-container{
   padding: 5px;
   margin: 0 auto;
-  max-width: 1400px;
-  margin-bottom: 15% ;
-  margin-top: 8.8%;
+  max-width: 100%;
+  margin-bottom: 10.2% ;
+  margin-top: 4%;
 }
 
 .main{
-  grid-template-columns: 670px 500px;
-  grid-template-rows: 155px 115px;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(0, auto);
-  grid-auto-columns: minmax(0,auto);
-  display: grid;
-  justify-content: center;
-}
-
-.vectorBlock {
-  grid-column: 1/1;
-  grid-row: 1/1;
-}
-
-.mainTxt {
-  grid-column: 1/2;
-}
-
-.proceedBtn {
-  grid-column: 1/1;
-  justify-content: start;
+  margin-left: 20%;
 }
 
 .mainImg {
-  grid-column: 2/2;
-  grid-row: 1/2;
+  position: relative;
+  align-content: right;
 }
 
 .vectorBlock{
@@ -43,10 +23,9 @@
 
 .mainVector{
   display: flex;
-  justify-content: center;
-  align-items: center; /* Путь к картинке */
-  background-repeat: no-repeat; /* Фон не повторяется */
-  background-size: cover; /* Растягиваем  фон по высоте и ширине */
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -55,39 +34,29 @@
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  margin-top: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .txt {
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-
-a {
-  color:white;
-  font-weight: 500;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1rem;
-  text-decoration: none;
-}
-
-.proceedBtn{
-  display: flex;
-  margin-left: 110px;
-  margin-bottom: auto;
+  margin-top: 20px
 }
 
 .btn {
+  margin-top: 40px;
   display: flex;
   margin-bottom: auto;
   background-color: #000000;
   border-radius: 7px;
   padding: 10px 25px;
+  color:white;
 }
