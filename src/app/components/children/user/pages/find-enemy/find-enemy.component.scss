@@ -21,9 +21,9 @@
 .battleVector {
     display: flex;
     justify-content: center;
-    align-items: center; /* Путь к картинке */
-    background-repeat: no-repeat; /* Фон не повторяется */
-    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin-bottom: 20px;
 }
@@ -92,4 +92,19 @@ h2{
 
 .paws{
     margin-right: 20px;
+}
+
+@media screen and (max-width:1100px){
+    .find__enemy__container{
+        scale:80%;
+    }
+    .findEnemy{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1015px){
+    .cat{
+        display: none;
+    }
 }

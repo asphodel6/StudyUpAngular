@@ -19,9 +19,9 @@
 .area{
     display: flex;
     justify-content: center;
-    align-items: center; /* Путь к картинке */
-    background-repeat: no-repeat; /* Фон не повторяется */
-    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    align-items: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     background-position: center;
 }
 
@@ -101,6 +101,18 @@ p {
     font-size: 0.8rem;
     line-height: 1rem;
 }
-// .victory-text {
-//     margin-top: 20%
-// }
+
+@media screen and (max-width:1000px){
+    .victory-container{
+        scale:80%;
+    }
+    .victory-text{
+        margin-left: 180px
+    }
+}
+
+@media screen and (max-width:800px){
+    .cat{
+        display: none;
+    }
+}
