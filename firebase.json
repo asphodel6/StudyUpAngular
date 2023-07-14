@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "StudyUp",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

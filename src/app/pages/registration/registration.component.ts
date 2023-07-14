@@ -26,6 +26,8 @@ export class RegistrationComponent implements OnInit {
 
   public createUser(): void {
     this._authService.registration(this.registrationForm.value);
+    this.registrationForm.get('password')?.reset();
+    this.registrationForm.get('userName')?.reset();
   }
 
   public get email(): any {

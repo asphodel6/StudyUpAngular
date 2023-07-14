@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "study-up-26bf2": {
+      "hosting": {
+        "StudyUp": [
+          "study-up-26bf2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "study-up-26bf2"
+  }
+}

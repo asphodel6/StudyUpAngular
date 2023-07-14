@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import  {ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AuthService } from './service/auth.service';
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { GlobalErrorHandlerService } from './service/global-error-handler.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +32,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [AuthService],
+  providers: [AuthService,
+    { provide: ErrorHandler, useClass: GlobalErrorHandlerService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
