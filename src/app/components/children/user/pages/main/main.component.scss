@@ -59,3 +59,36 @@
     display:none;
   }
 }
+
+@media screen and (max-width: 768px){
+  .main-container{
+    scale: 80%;
+    margin-top: -82px;
+    margin-bottom: -100px;
+  }
+  .text-part{
+    margin-bottom:0;
+  }
+  .vector{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 642px){
+  .main-container{
+    scale: 70%;
+    margin-top: -240px;
+    margin-bottom: -155px;
+  }
+  .text{
+    font-size:2rem;
+  }
+  .vector img{
+    scale:70%;
+  }
+  .btn__block{
+    scale:90%;
+    margin: 0;
+    padding: 0;
+  }
+}
