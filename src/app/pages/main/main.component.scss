@@ -68,20 +68,52 @@ h2 {
   }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
   .main-container{
-    scale: 60%;
+    scale: 70%;
   }
 }
 
-@media screen and (max-width:800px){
-  .mainCat{
-    display: none;
-  }
+@media screen and (max-width:1000px){
   .main-container{
     scale:60%
   }
   .main{
     margin:0
+  }
+}
+
+@media screen and (max-width:800px){
+  .main-container{
+    scale: 70%;
+    margin-top: 12vh;
+    margin-bottom: 22VH;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainCat{
+    display: none;
+  }
+  .VectorTxt{
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
+
+  .btn{
+    padding: 10px 150px;
+  }
+}
+
+@media screen and (max-width:590px) {
+  .mainVector img{
+    max-width: 500px;
+  }
+  .VectorTxt{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
