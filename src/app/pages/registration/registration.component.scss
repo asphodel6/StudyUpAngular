@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background: url(../../../assets/images/registr-bg.svg) center center no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .reg__block {
@@ -79,9 +79,16 @@ a {
   position: absolute;
 }
 
+@media screen and (max-width: 1300px) { 
+  .reg__block {
+    scale: 90%;
+  }
+}
+
 @media screen and (max-width: 1100px) { 
   .reg__block {
     scale: 80%;
+    margin-top: 16vh;
   }
 }
 
@@ -93,9 +100,25 @@ a {
     margin-left: 0;
   }
   .reg__container{
-    background: transparent;
+    background: url(../../../assets/images/reg-tablet.svg);
+    background-size: cover;
   }
   .reg__block{
     margin-right: 0;
   }
+  .signUp button{
+    padding: 10px 90px;
+    color: #FFFFFF;
+    margin-left: 10vh;
+  }
+}
+
+@media screen and (max-width:560px) {
+    .reg__container{
+      background: url(../../../assets/images/reg-mob.svg);
+      background-size:cover ;
+    }
+    .reg__block{
+      scale: 70%;
+    }
 }
