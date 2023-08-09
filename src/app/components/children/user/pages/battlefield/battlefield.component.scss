@@ -102,10 +102,10 @@ p{
 }
 
 @media screen and (max-width:800px) {
-    .play-field-container {
-    
+    .play-field-container{
+        background: url(../../../../../../assets/images/bf-bg-mobile.svg) center center no-repeat;
+        background-size: cover;
     }
-
     .play-field{
         display: flex;
         flex-direction: column;
@@ -121,4 +121,11 @@ p{
     .line{
         transform: rotate(90deg)
     }
+}
+
+@media screen and (max-width:590px) {
+    // .question-block img{
+    //     background-image: url(../../../../../../assets/images/question-bg.svg);
+    //     background-size: cover;
+    // }
 }

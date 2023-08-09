@@ -116,3 +116,28 @@ p {
         display: none;
     }
 }
+
+@media screen and (max-width:590px){
+    .defeat-container{
+        scale:75%;
+    }
+
+    .defeat-text{
+        margin-bottom: 115px
+    }
+
+    .btn{
+        padding: 10px 150px;
+        margin-bottom: 15px;
+    }
+
+    .btn-block{
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .defeat-container{
+        scale: 57%;
+    }
+}

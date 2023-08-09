@@ -107,12 +107,55 @@ p {
         scale:80%;
     }
     .victory-text{
-        margin-left: 180px
+        margin-left: 180px;
     }
 }
 
 @media screen and (max-width:800px){
+    .victory-text{
+        margin-left: 180px;
+    }
     .cat{
         display: none;
     }
 }
+
+@media screen and (max-width:590px){
+    .victory-container{
+        scale:75%;
+    }
+    .victory-text{
+        margin-bottom: 95px;
+    }
+
+    .btn{
+        padding: 10px 150px;
+        margin-bottom: 15px;
+    }
+
+    .btn-block{
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .victory-container{
+        scale: 57%;
+    }
+}
+
+
+// @media screen and (max-width:1000px){
+//     .victory-container{
+//         scale:80%;
+//     }
+//     .victory-text{
+//         margin-left: 180px
+//     }
+// }
+
+// @media screen and (max-width:800px){
+//     .cat{
+//         display: none;
+//     }
+// }
