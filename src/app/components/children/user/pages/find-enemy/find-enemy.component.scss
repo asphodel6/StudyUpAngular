@@ -81,7 +81,7 @@ h2{
     margin-left: 120px;
     margin-bottom: 30px;
     background: #000000;
-    border-radius: 7px;
+    border-radius: 9px;
     color: white;
     padding: 10px 10px;
 }
@@ -177,7 +177,7 @@ h2{
         margin-top: -45px;
     }
     .playBtn{
-        padding: 20px 125px;
+        // padding: 20px 125px;
         font-size: 1.5rem;
         margin-left: 85px;
     }
@@ -223,6 +223,7 @@ h2{
     }
     .battleVector{
         margin-bottom: 0;
+        max-width: 350px;
     }
 
     .back{
@@ -238,5 +239,9 @@ h2{
     .findEnemy h2{
         font-size: 1.3rem;
         line-height: 1.3rem;
+    }
+    .playBtn{
+        font-size: 1.2rem;
+        line-height: 1rem;
     }
 }
