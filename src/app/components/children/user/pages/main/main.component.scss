@@ -77,8 +77,8 @@
 @media screen and (max-width: 642px){
   .main-container{
     scale: 70%;
-    margin-top: -240px;
-    margin-bottom: -155px;
+    margin-top: -159px;
+    margin-bottom: -126px;
   }
   .text{
     font-size:2rem;
@@ -90,5 +90,12 @@
     scale:90%;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media screen and (max-width:590px) {
+  .main-container{
+    margin-top: -235px;
+
   }
 }
