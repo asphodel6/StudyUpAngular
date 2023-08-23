@@ -4,23 +4,45 @@
     justify-content: space-between;
     padding: 30px 30px;
     box-sizing: border-box; 
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p{
+    margin-left: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: #000000;
 }
 
 .nav {
     display: flex;
     list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav li {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
-.rating {
-    margin-top: 5px;
-}
-
-.notifications {
-    margin-top: 5px;
+@media screen and (max-width:670px){
+  .logo p{
+    display: none;
+  }
 }

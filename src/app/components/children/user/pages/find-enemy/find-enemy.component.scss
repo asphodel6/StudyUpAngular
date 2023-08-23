@@ -21,9 +21,9 @@
 .battleVector {
     display: flex;
     justify-content: center;
-    align-items: center; /* Путь к картинке */
-    background-repeat: no-repeat; /* Фон не повторяется */
-    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin-bottom: 20px;
 }
@@ -59,7 +59,21 @@ h2{
 
 .trainingBlock{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: 55px;
+}
+
+.randomPlayerBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.playWithFriendBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .playBtn {
@@ -67,7 +81,7 @@ h2{
     margin-left: 120px;
     margin-bottom: 30px;
     background: #000000;
-    border-radius: 7px;
+    border-radius: 9px;
     color: white;
     padding: 10px 10px;
 }
@@ -92,4 +106,142 @@ h2{
 
 .paws{
     margin-right: 20px;
+}
+
+@media screen and (max-width:1100px){
+    .find__enemy__container{
+        scale:80%;
+    }
+    .findEnemy{
+        margin-top:10px;
+        margin-bottom: 51px;
+    }
+}
+
+@media screen and (max-width:1015px){
+    .cat{
+        display: none;
+    }
+    .findEnemy{
+        margin-top:0;
+        margin-bottom: 102px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .title{
+        font-size: 2.5rem;
+    }
+    .battleVector img{
+        scale:90%
+    }
+
+    .back{
+        margin-left: 75px;
+    }
+    .chooseEnemyBlock{
+        margin-left: 0;
+
+    }
+    .chooseEnemyBlock h2{
+        font-size: 2rem;
+        line-height: 1.3rem;
+        
+    }
+    .chooseEnemyBlock div{
+        padding: 20px;
+    }
+
+    .trainingBlock{
+        margin-left: 0;
+    }
+    
+    .randomPlayerBlock{
+        margin-left: 0;
+    }
+
+    .lock{
+        margin-left: 85px;
+    }
+    .playWithFriendBlock{
+        margin-left: 0;
+    }
+    .findEnemy{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:-27px;
+        margin-top: -45px;
+    }
+    .playBtn{
+        // padding: 20px 125px;
+        font-size: 1.5rem;
+        margin-left: 85px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .title{
+        font-size: 2.2rem;
+        line-height: 1.7rem;
+    }
+    .battleVector img{
+        scale:80%;
+    }
+    .back{
+        font-size: 1.3rem;
+        line-height: 1rem;
+    }
+    .findEnemy{
+        margin-top:-70px;
+        margin-bottom: 42px;
+    }
+    .chooseEnemyBlock h2{
+        font-size: 1.5rem;
+    }
+    .playBtn{
+        margin-left: 85px;
+        margin-top: 10px;
+    }
+    .randomPlayerBlock img{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+
+}
+@media screen and (max-width:460px) {   
+    .title{
+        font-size: 1.5rem;
+        line-height: 1,75rem;
+    }
+    .battleVector img{
+        scale:60%;
+    }
+    .battleVector{
+        margin-bottom: 0;
+        max-width: 350px;
+    }
+
+    .back{
+        font-size: 0.875rem;
+        line-height: 1rem;
+        margin-left: 155px;
+    }
+
+    .findEnemy{
+        grid-gap:0;
+    }
+
+    .findEnemy h2{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    .playBtn{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
 }

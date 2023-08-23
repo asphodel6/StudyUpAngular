@@ -1,42 +1,131 @@
 .play-field-container{
-    padding: 10px  10px;
-    background: url(../../../../../../assets/images/play-field-bg.svg) center center no-repeat;
+    padding: 10px 10px;
+    background: url(../../../../../../assets/images/bf-bg.svg) center center no-repeat;
     background-size: cover;
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
 }          
 
 .play-field{
+    display: flex;
     max-width: 1600px;
-    margin-left: 7.597%;
-    margin-bottom: 9.5%;
+    margin-bottom: 19.5%;
     margin-top: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .players-area{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
     margin-bottom: 5%;
 }
 
+.player-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 p{
     margin-top: 10px;
-    margin-left: 15px;
     margin-bottom: 15px
 }
 
+.health-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 .health-bar img{
     padding: 5px;
+    
 }
 
 .play-zone {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .play-zone img{
     padding: 20px;
+}
+
+@media screen and (max-width:1300px){
+    .play-field{
+        scale: 85%;
+        display: flex;
+        max-width: 80%;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+    .play-zone img{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .play-field{
+        margin-bottom: 182px;
+        scale: 80%;
+        display: flex;
+    }
+    .play-zone{
+        display: flex;
+        flex-direction: row;
+        scale:80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .play-field-container{
+        background: url(../../../../../../assets/images/bf-bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+    }
+    .play-field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -110px;
+    }
+    .play-zone{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+    .line{
+        transform: rotate(90deg)
+    }
+}
+
+@media screen and (max-width:590px) {
+    // .question-block img{
+    //     background-image: url(../../../../../../assets/images/question-bg.svg);
+    //     background-size: cover;
+    // }
 }
